@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyclone Data Classification System using Random Forest</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Add your CSS here */
+        .admin-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .admin {
+            flex: 1; /* Distribute space equally */
+            padding: 10px; /* Add some padding */
+            text-align: left; /* Center the text */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cyclone Data Classification System using Random Forest</h1>
+        <form id="cycloneForm">
+            <label for="max_wind">Maximum Wind:</label>
+            <input type="number" id="max_wind" name="max_wind" required><br><br>
+
+            <label for="min_pressure">Minimum Pressure:</label>
+            <input type="number" id="min_pressure" name="min_pressure" required><br><br>
+
+            <label for="latitude">Latitude:</label>
+            <input type="number" id="latitude" name="latitude" required><br><br>
+
+            <label for="year">Year:</label>
+            <input type="number" id="year" name="year" required><br><br>
+
+            <label for="longitude">Longitude:</label>
+            <input type="number" id="longitude" name="longitude" required><br><br>
+
+            <button type="submit">Classify Cyclone</button>
+        </form>
+        <div id="result"></div>
+
+        <!-- Admin Section -->
+        <div class="admin-container">
+            <div class="admin">
+                <h3>Himansu Agrawal</h3>
+                <p>
+                    <i class="fas fa-envelope"></i> himansubansal1701@gmail.com<br>
+                    <div class="social-icons">
+                        <a href="https://github.com/HIMANSUAGRAWAL" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/himansu-agrawal-706174300/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/_himansubansal_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/HimansuBan73216" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.kaggle.com/himansuagrawal" target="_blank"><i class="fab fa-kaggle"></i></a>
+                    </div>
+                </p>
+            </div>
+
+            <div class="admin">
+                <h3>Subhalaxmi Nayak</h3>
+                <p>
+                    <i class="fas fa-envelope"></i> subhlaxmi.sp.nayak067@gmail.com<br>
+                    <div class="social-icons">
+                        <a href="https://github.com/nayaksubhalaxmi" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/subhalaxmi-nayak-769800257" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.kaggle.com/subhalaxminayak067" target="_blank"><i class="fab fa-kaggle"></i></a>
+                    </div>
+                </p>
+            </div>
+        </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
